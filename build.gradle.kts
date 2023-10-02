@@ -10,26 +10,34 @@ buildscript {
 plugins {
     `java-library`
     checkstyle
-    kotlin("jvm") version "1.6.21"
+    // 'com.github.johnrengelman.shadow' version '7.1.2'
+//    kotlin("jvm") version "1.6.21"
+
+    id("com.github.johnrengelman.shadow") version "7.1.2"
 }
 
-project.extra["GithubUrl"] = "https://github.com/melxin/devious-plugins-extended"
-project.extra["GithubUserName"] = "melxin"
-project.extra["GithubRepoName"] = "devious-plugins-extended"
+project.extra["GithubUrl"] = "https://github.com/FredsDevious/plugins"
+project.extra["GithubUserName"] = "FredsDevious"
+project.extra["GithubRepoName"] = "plugins"
 
 apply<BootstrapPlugin>()
 
 allprojects {
     group = "net.unethicalite"
 
-    project.extra["PluginProvider"] = "melxin"
+    project.extra["PluginProvider"] = "fred4106"
     project.extra["ProjectSupportUrl"] = ""
     project.extra["PluginLicense"] = "3-Clause BSD License"
 
+//    plugins {
+//      java
+//      `java-library`
+//      id("com.github.johnrengelman.shadow") version "7.1.2"
+//    }
+
     apply<JavaPlugin>()
     apply(plugin = "java-library")
-    apply(plugin = "kotlin")
-    apply(plugin = "checkstyle")
+    apply(plugin = "com.github.johnrengelman.shadow")
 
     repositories {
         mavenCentral()
@@ -67,9 +75,19 @@ allprojects {
             dirMode = 493
             fileMode = 420
         }
+        shadowJar {
+            archiveClassifier.set("shaded")
+            manifest.inheritFrom(jar.get().manifest) //will make your shadowJar (produced by jar task) runnable
+        }
+        register<Copy>("releaseToExternalManager"){
+            into("${System.getProperty("user.home")}/.openosrs/sideloaded-plugins/")
+            from(shadowJar)
+            include("*.jar")
+        }
 
-        compileKotlin {
-            kotlinOptions.jvmTarget = "11"
+        register<Copy>("copyDeps") {
+            into("./build/deps/")
+            from(configurations["runtimeClasspath"])
         }
     }
 }

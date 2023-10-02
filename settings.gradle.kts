@@ -23,17 +23,7 @@
  * SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
  */
 
-rootProject.name = "unethicalite-plugins"
-
-//include("hoot-blackjack")
-//include("hoot-trawler")
-//include("hoot-pickpocket")
-//include("hoot-aerialfishing")
-//include("hoot-chins")
-//include("hoot-notifier")
-//include("hoot-karambwanfisher")
-
-include("hoot-tempoross")
+rootProject.name = "freds-unethicalite-plugins"
 
 include("unethical-fighter")
 include("unethical-butler")
@@ -56,7 +46,8 @@ include("m-autoswitcher")
 include("m-powerfisher")
 include("m-wintertodt")
 
-//include("example-kotlin")
+include("example-kotlin")
+include("example-scala")
 
 for (project in rootProject.children) {
     project.apply {

@@ -51,7 +51,7 @@ open class BootstrapTask : DefaultTask() {
             project.subprojects.forEach {
                 if (it.project.properties.containsKey("PluginName") && it.project.properties.containsKey("PluginDescription")) {
                     var pluginAdded = false
-                    val plugin = it.project.tasks["jar"].outputs.files.singleFile
+                    val plugin = it.project.tasks["shadowJar"].outputs.files.singleFile
 
                     val releases = ArrayList<JsonBuilder>()
 
@@ -61,7 +61,7 @@ open class BootstrapTask : DefaultTask() {
                             "version" to it.project.version,
                             "requires" to ProjectVersions.apiVersion,
                             "date" to formatDate(Date()),
-                            "url" to "${project.rootProject.extra.get("GithubUrl")}/blob/master/release/${it.project.name}-${it.project.version}.jar?raw=true",
+                            "url" to "${project.rootProject.extra.get("GithubUrl")}/blob/master/release/${it.project.name}-${it.project.version}-shaded.jar?raw=true",
                             "sha512sum" to sha512
                         )
                     )
@@ -101,7 +101,7 @@ open class BootstrapTask : DefaultTask() {
                     }
 
                     plugin.copyTo(
-                        Paths.get(bootstrapReleaseDir.toString(), "${it.project.name}-${it.project.version}.jar").toFile(),
+                        Paths.get(bootstrapReleaseDir.toString(), "${it.project.name}-${it.project.version}-shaded.jar").toFile(),
                         overwrite = true
                     )
                 }
