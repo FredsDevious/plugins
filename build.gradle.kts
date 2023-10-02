@@ -12,7 +12,7 @@ plugins {
     checkstyle
     // 'com.github.johnrengelman.shadow' version '7.1.2'
 //    kotlin("jvm") version "1.6.21"
-
+//    kotlin("kapt") version "1.6.21"
     id("com.github.johnrengelman.shadow") version "7.1.2"
 }
 
@@ -29,15 +29,10 @@ allprojects {
     project.extra["ProjectSupportUrl"] = ""
     project.extra["PluginLicense"] = "3-Clause BSD License"
 
-//    plugins {
-//      java
-//      `java-library`
-//      id("com.github.johnrengelman.shadow") version "7.1.2"
-//    }
-
     apply<JavaPlugin>()
     apply(plugin = "java-library")
     apply(plugin = "com.github.johnrengelman.shadow")
+//    apply(plugin = "kotlin")
 
     repositories {
         mavenCentral()
@@ -78,6 +73,13 @@ allprojects {
         shadowJar {
             archiveClassifier.set("shaded")
             manifest.inheritFrom(jar.get().manifest) //will make your shadowJar (produced by jar task) runnable
+            // from(sourceSets.main.getOutput)
+            // from(project.configurations.runtimeClasspath)
+            exclude("**/*.kotlin_metadata")
+            exclude("**/*.kotlin_module")
+            // exclude("META-INF/maven/**")
+            exclude("META-INF/versions/**")
+            // exclude("/META-INF/versions/*")
         }
         register<Copy>("releaseToExternalManager"){
             into("${System.getProperty("user.home")}/.openosrs/sideloaded-plugins/")

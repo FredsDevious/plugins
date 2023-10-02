@@ -5,16 +5,16 @@ project.extra["PluginDescription"] = ""
 
 plugins {
     kotlin("jvm") version "1.6.21"
-    kotlin("kapt") version "1.6.21"
+    id("org.jetbrains.kotlin.plugin.lombok") version "1.6.21"
 }
 
-//apply(plugin = "kotlin")
 dependencies {
-    kapt(Libraries.pf4j)
+    implementation("org.jetbrains.kotlin:kotlin-stdlib:1.6.21")
 }
 tasks {
     compileKotlin {
-            kotlinOptions.jvmTarget = "11"
+            kotlinOptions.jvmTarget = "1.8"
+//            kotlinOptions.j
     }
     jar {
         manifest {
@@ -27,5 +27,6 @@ tasks {
                 "Plugin-License" to project.extra["PluginLicense"]
             ))
         }
+        exclude("META-INF/versions")
     }
 }
