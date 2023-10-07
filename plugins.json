@@ -1,27 +1,14 @@
 [{
   "projectUrl": "",
   "provider": "fred4106",
-  "name": "Kotlin Example Plugin",
+  "name": "Scala Example",
   "description": "",
-  "id": "kotlinexampleplugin-plugin",
+  "id": "scalaexample-plugin",
   "releases": [{
-    "date": "2023-10-01",
-    "sha512sum": "55DC11F04200AC0634C0829C458943CA448E5282AAEED6E8F39BC7DB4F850379144437B786BD7AE480A66A5C3AC95081BB31CE521C08AD30F752EE73A4172361",
+    "date": "2023-10-07",
+    "sha512sum": "FE7E96212B74177D6826A177981D9E51EAF9269B116E341EDE863ED5EFD8E2003F1A83ED87F3A7259CC0905ED21281961803C7ADCDDE18B00D03C1E9821C96F2",
     "version": "0.0.1",
-    "url": "https://github.com/FredsDevious/plugins/blob/master/release/example-kotlin-0.0.1.jar?raw=true",
-    "requires": "^1.0.0"
-  }]
-}, {
-  "projectUrl": "",
-  "provider": "fred4106",
-  "name": "Scala Example Plugin",
-  "description": "",
-  "id": "scalaexampleplugin-plugin",
-  "releases": [{
-    "date": "2023-10-01",
-    "sha512sum": "EE8C30912ED399AAD29645104B716CA8B2B47F68F423C72FE096D57DF0F4F26F9936868153C09ACDE248A2E90150D3FE71B2E90F327A11C400CA984A469DE957",
-    "version": "0.0.1",
-    "url": "https://github.com/FredsDevious/plugins/blob/master/release/example-scala-0.0.1.jar?raw=true",
+    "url": "https://github.com/FredsDevious/plugins/blob/master/release/example-scala-0.0.1-shaded.jar?raw=true",
     "requires": "^1.0.0"
   }]
 }, {
@@ -32,7 +19,7 @@
   "id": "mautoswitcher-plugin",
   "releases": [{
     "date": "2023-10-01",
-    "sha512sum": "94A245872D0E5F24445CAA8F2BF38C77C20E5D671A3304B350637C1D3B0D13DC3B29418133DFB649848D4AED6370DAF1E7A8196CF31CBFA349C18487CD44676F",
+    "sha512sum": "BADF75240449626CB242ED7EE2B72A79CF9AC4DA0C2FF0E40F21B7E9CFAD037E50169D296D713DD882453AA06FD43B2E19DC854B5C1F35F7CA4C17E47C3AAEDA",
     "version": "0.0.1",
     "url": "https://github.com/FredsDevious/plugins/blob/master/release/m-autoswitcher-0.0.1.jar?raw=true",
     "requires": "^1.0.0"
@@ -45,7 +32,7 @@
   "id": "mpowerfisher-plugin",
   "releases": [{
     "date": "2023-10-01",
-    "sha512sum": "10378CAA9ED7D4169D7F52F1447F9FAE0FDA183890C6F48894ADA183F6981D1EE9D2F647587025B346C8D5B637947CEFB4E4328FCE216A28BF2DEFF2D86A3335",
+    "sha512sum": "ABE680D4D298C22C95CC8298B8952D5040C03D18760395256CED2AF046896E07EE1F388E156F1188B052D87E5BC6EF3C62CA65D685C2E40D64897A119695EC91",
     "version": "0.0.2",
     "url": "https://github.com/FredsDevious/plugins/blob/master/release/m-powerfisher-0.0.2.jar?raw=true",
     "requires": "^1.0.0"
@@ -58,7 +45,7 @@
   "id": "mwintertodt-plugin",
   "releases": [{
     "date": "2023-10-01",
-    "sha512sum": "981AAA786017ED9AD70983D14CED1D37ECD8AD9F451895A5040672C37FCAA0F99BA89D4C668011C7BFE20E2AFC505585596C974BBF70C7EDF011D639943195D1",
+    "sha512sum": "1EE1E550E4C12D6A668ECF64FAF0A9A87627397A2D3229C7A4BCB88D1FD0F5FA8BFE8B86AF8C9509F8A752795C8D018FAD7A15B9C4BA4547221290F69543E99C",
     "version": "0.0.4",
     "url": "https://github.com/FredsDevious/plugins/blob/master/release/m-wintertodt-0.0.4.jar?raw=true",
     "requires": "^1.0.0"
@@ -71,7 +58,7 @@
   "id": "unethicalagility-plugin",
   "releases": [{
     "date": "2023-10-01",
-    "sha512sum": "A641350223C152817D76571F4C28F57FE59575F8D932DE192FD5B50C75F1C2142671911CD4F748475ED27D5DF4DDA4AE85841E032FEE6B69F778BC14D4B0BBDC",
+    "sha512sum": "A48DA8569AE7B801E1D148016EC0CA3B983F768A3FA7266B6066497394BFBF428CAB7D7130FF6E427D2BD6E2FB56FFD3D53A7C6D7727C265D2156150DF3C8374",
     "version": "0.0.8",
     "url": "https://github.com/FredsDevious/plugins/blob/master/release/unethical-agility-0.0.8.jar?raw=true",
     "requires": "^1.0.0"
@@ -84,7 +71,7 @@
   "id": "unethicalautologin-plugin",
   "releases": [{
     "date": "2023-10-01",
-    "sha512sum": "CF48B050E1B1F2020548B0938BE4265BE2AA55CB3DF7B2ABA694E6D79D19C6F5C88130CEC47646FAB2825B51548C3FFD6937D855558C10E0ED8767F448D02406",
+    "sha512sum": "637CC7884DF0616C5AD0EEC29F80FDCE357BBF4EEC5157FF8723EF898A9C676B207E5AB30B487D982AE8F720F60D6FA8F6E4A68B1E3ACDC70FB658C4CAA97F48",
     "version": "0.0.2",
     "url": "https://github.com/FredsDevious/plugins/blob/master/release/unethical-autologin-0.0.2.jar?raw=true",
     "requires": "^1.0.0"
@@ -97,7 +84,7 @@
   "id": "unethicalbankpin-plugin",
   "releases": [{
     "date": "2023-10-01",
-    "sha512sum": "CDCABB634CADE9464DD5E145049B68DE94FF6CC07878E1C24620761D71D58E0AD959B64395E593808875F9DD1DA121C79B1A514FF5F36EB8C484F438767E5D03",
+    "sha512sum": "81B2E9E91C59D939C104360BE1EA0D1C10746032156F933C281CA86D9FD5C6FABF868C9430B7884A0F5A9E6AB7873959E599D87222E2BC836C80601451BD0C0A",
     "version": "0.0.1",
     "url": "https://github.com/FredsDevious/plugins/blob/master/release/unethical-bankpin-0.0.1.jar?raw=true",
     "requires": "^1.0.0"
@@ -110,7 +97,7 @@
   "id": "unethicalbirdhouses-plugin",
   "releases": [{
     "date": "2023-10-01",
-    "sha512sum": "F3ADAB949EFF3119DC42C85BDBC0BE3B69C133643346BD1BAD16876F604B6AC6C681E2EDB73064C69DDB1B58469A98C49D05B472C2EE21AD47BA882BF20FE077",
+    "sha512sum": "06E406221F9779027FE746BCD77FB975220EC2D884C12A56DC38B332FB3E86E6179770A480E334540115899720BF3767DF9CE1234C3E649772B9A31966CDEEF3",
     "version": "0.0.6",
     "url": "https://github.com/FredsDevious/plugins/blob/master/release/unethical-birdhouses-0.0.6.jar?raw=true",
     "requires": "^1.0.0"
@@ -123,7 +110,7 @@
   "id": "unethicalbutler-plugin",
   "releases": [{
     "date": "2023-10-01",
-    "sha512sum": "91CDC9A26469D1478E5C6AA8A34FF208DD05FE67007EFC087208AB69EEF2E69FCC2B50EA961320D7BC6B8E612051189B1C1A9CBE53740E8BD6D766C6E248FB0B",
+    "sha512sum": "375B2226E88D95D558DB8A3339476DD7871AB3438D994A30E21C576379499A722B28800551C97E4AE7CD2B6929CC250B701AE329989865E84F8EF49CEEB6F764",
     "version": "0.0.1",
     "url": "https://github.com/FredsDevious/plugins/blob/master/release/unethical-butler-0.0.1.jar?raw=true",
     "requires": "^1.0.0"
@@ -136,7 +123,7 @@
   "id": "unethicalchopper-plugin",
   "releases": [{
     "date": "2023-10-01",
-    "sha512sum": "ED86DD288264261D94E1E12786D54D0D8ACB86CD7082DB8D41D524AF5E692EB1C656C062C5551B8E5A0413B43351161A570B555C3B26137D9786A1C905D6959D",
+    "sha512sum": "560FCAC2BB6A78E0E2D01F80C0F2B2FA97536183C438B4419604ADD9DBBF645E8CACEEF47C81B216A306922DD981DBC1032D194F187BC814DF567F76FAFB074D",
     "version": "0.0.3",
     "url": "https://github.com/FredsDevious/plugins/blob/master/release/unethical-chopper-0.0.3.jar?raw=true",
     "requires": "^1.0.0"
@@ -149,7 +136,7 @@
   "id": "unethicalcooker-plugin",
   "releases": [{
     "date": "2023-10-01",
-    "sha512sum": "CED8B1DE79CEC2C6F6F10AFDA72DF84740C8A57B70FDDABBEFD9BBBD495DF9D91EB5A068A5FE7606AEC95E5AE51F0832E7C82C83B5ED5791A9371B492F24BF14",
+    "sha512sum": "CDC869390B56EA6CA5A7925605ABA8CF88987B17048522D2E1DC858A301EFBEB2FB6B74B0DBF70E252058E8E48FA1AEE9D95CBD8C8BA380A32C7FCD043CC2D71",
     "version": "0.0.3",
     "url": "https://github.com/FredsDevious/plugins/blob/master/release/unethical-cooker-0.0.3.jar?raw=true",
     "requires": "^1.0.0"
@@ -162,7 +149,7 @@
   "id": "unethicalexplorer-plugin",
   "releases": [{
     "date": "2023-10-01",
-    "sha512sum": "8B85BBA13E9E884A449D1E28AB7C8A0B1762B0E6B6D729F2E27BDB9CACA92A0528855015531F7F8A310661667ACB7BF8DD1B2E523E55865C6CE021A8B5CCF6C4",
+    "sha512sum": "FBA09234AD846509F6829A2D813993E868626E4FC09EFE47CC7FEDD3E64F0EA72E05CD12EC505473DF68EF16B1608883EEB7A3FC9688AFBE29CA07A5639412BB",
     "version": "0.0.5",
     "url": "https://github.com/FredsDevious/plugins/blob/master/release/unethical-explorer-0.0.5.jar?raw=true",
     "requires": "^1.0.0"
@@ -175,7 +162,7 @@
   "id": "unethicalfighter-plugin",
   "releases": [{
     "date": "2023-10-01",
-    "sha512sum": "84B73482F4C8E05B60740878ECEA1750E705DCBB6F3EF761F160253C2672B71F570EEB5C136F7FFCF961938EC09635A53020AE516A4BFCC691AC05B65BC78579",
+    "sha512sum": "4635B30DFE1B30C5A4819C378105CC2DC968614B9F0D1A6E528719C54B07E77899DD5435FCBC787557B6BF125FFBDCA60411AB70EDEC17B648EE76CDF370CFBC",
     "version": "0.0.7",
     "url": "https://github.com/FredsDevious/plugins/blob/master/release/unethical-fighter-0.0.7.jar?raw=true",
     "requires": "^1.0.0"
@@ -188,7 +175,7 @@
   "id": "unethicalkebabbuyer-plugin",
   "releases": [{
     "date": "2023-10-01",
-    "sha512sum": "53DB8F2B7AAEC32D245DDA3ED76AC60C405B9DD44FC31864069445B6ECB09694EBA1AADA87D55E47A92332DD212C0B385DABBB9815FE1516B499C7013262D983",
+    "sha512sum": "AC7244239D3A4F7F688E665E51E5EF9CD0486CE2E0942836B966DEF8D2B0147A9059389CD2D8BEAADFCB305EB11BF705FC6A9B55C67B4DB4A6F310E46BAD1FD4",
     "version": "0.0.1",
     "url": "https://github.com/FredsDevious/plugins/blob/master/release/unethical-kebab-buyer-0.0.1.jar?raw=true",
     "requires": "^1.0.0"
@@ -201,7 +188,7 @@
   "id": "unethicallogout-plugin",
   "releases": [{
     "date": "2023-10-01",
-    "sha512sum": "80E667EE08CC734FC3D55B67F943D984FFEF628A70FFA9C85DC19BC9FAF983D0BE2BD8C192E38D7048E8DAD68BF3C36699C87B38FEAF4FDD650CC5804C2B58C0",
+    "sha512sum": "C389A476931135B857E06AEEFE5C31B85C84C32EEFCAFEC059C0058ABB2359E4F0BAB3DBF415FD7EED08D6C76652297CF65B1EB02860006D8D6631D44AF9209D",
     "version": "0.0.1",
     "url": "https://github.com/FredsDevious/plugins/blob/master/release/unethical-logout-0.0.1.jar?raw=true",
     "requires": "^1.0.0"
@@ -214,7 +201,7 @@
   "id": "unethicaloneclick-plugin",
   "releases": [{
     "date": "2023-10-01",
-    "sha512sum": "598EE473FFDDFD101C85018123C60538F47E2DC2C958970121658DCBD25F63F5E6327D3DF66521EC8EED6B62732A82CE88384410ED543FD850482D8888FC28F1",
+    "sha512sum": "C430DD381C83861F1FE90692917F0733DB0302880552EB6F7C2E24BBDFAC4FDBCF8B7B4063A525394F0CE18FF8025DDA7141A6FF200F1C37AD265BF395473712",
     "version": "0.0.1",
     "url": "https://github.com/FredsDevious/plugins/blob/master/release/unethical-oneclick-0.0.1.jar?raw=true",
     "requires": "^1.0.0"
@@ -227,7 +214,7 @@
   "id": "unethicalpickpocket-plugin",
   "releases": [{
     "date": "2023-10-01",
-    "sha512sum": "9B1793AA2F3234ED78A9398DE85D7F7D7D195CDE82A040F29177C4AF54369E2A57B4AC8BC78EA9FEE5D64F36AFBB1AF470A2735A228FFCE656141ED3A9C27B06",
+    "sha512sum": "22959031273767B202788C6401B25976C0EDBA028B669C071444B20591B2533DFEC0686233BAAAC874AF0008877947FE54E6F34270A9C4AD70B56805403B4872",
     "version": "0.0.6",
     "url": "https://github.com/FredsDevious/plugins/blob/master/release/unethical-pickpocket-0.0.6.jar?raw=true",
     "requires": "^1.0.0"
@@ -240,7 +227,7 @@
   "id": "unethicalprayer-plugin",
   "releases": [{
     "date": "2023-10-01",
-    "sha512sum": "B2F92E8307FA93CF6749C0974D605152989A47979C4A4F5B6B7DFEFBF3C25E2CF1F150E2ADE2EB24FF2B8A49FD255F5FD2D20CBCEF41FDBF71C6DD6AD5B68788",
+    "sha512sum": "322B6D36154AC97C632994A2C62DF21EED8A3B7052B7F2C3E10D13C5376E6494845D822610256065B0C66584D8C3F59040BF2551A98DEADD85790765CAAA5BFA",
     "version": "0.0.6",
     "url": "https://github.com/FredsDevious/plugins/blob/master/release/unethical-prayer-0.0.6.jar?raw=true",
     "requires": "^1.0.0"
@@ -253,7 +240,7 @@
   "id": "unethicaltempoross-plugin",
   "releases": [{
     "date": "2023-10-01",
-    "sha512sum": "841DFCAE0D3E6EB54F220DFBCE9070400492C6EB9D2B8A9720D637C945A574A8C0B0C804716A85BB4DAE64A8B0D09C172D7FF2A07B280F75E6A2104BDA0FB4BA",
+    "sha512sum": "890614AE5D7FADEB37F6FF3B33CD13B803C8998621E58EE1642BEE5A2A669D122CEC42676A0D2E569D50945F10DE4888FAC9ACF6A169ACA506CF488FAB56C9FD",
     "version": "0.0.1",
     "url": "https://github.com/FredsDevious/plugins/blob/master/release/unethical-tempoross-0.0.1.jar?raw=true",
     "requires": "^1.0.0"
@@ -266,7 +253,7 @@
   "id": "unethicalzulrah-plugin",
   "releases": [{
     "date": "2023-10-01",
-    "sha512sum": "6A7123DA8D0A4046E5DF393442B0B920C0C6010D55E7B313644A7950B8FBCABA3B3E95E8004A7E3D7A99AD23D500211F8AF5654B625E744D4A644EC511E79DAB",
+    "sha512sum": "943D7373F46E226D3B7CF45DBAB3F79C981BA92191FEC87D5785E1988A3F59D5B67B341DFFEE1ACF354D66EF57EC3100B5946A82955B831B103489D3FF526EDD",
     "version": "0.0.2",
     "url": "https://github.com/FredsDevious/plugins/blob/master/release/unethical-zulrah-0.0.2.jar?raw=true",
     "requires": "^1.0.0"

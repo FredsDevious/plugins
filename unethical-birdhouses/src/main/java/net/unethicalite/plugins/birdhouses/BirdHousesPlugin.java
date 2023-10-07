@@ -88,7 +88,6 @@ public class BirdHousesPlugin extends TaskPlugin
 	@Inject
 	private ClientToolbar clientToolbar;
 
-	@Inject
 	private NavigationButton navButton;
 
 	@Override

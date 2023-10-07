@@ -46,7 +46,7 @@ include("m-autoswitcher")
 include("m-powerfisher")
 include("m-wintertodt")
 
-include("example-kotlin")
+// include("example-kotlin")
 include("example-scala")
 
 for (project in rootProject.children) {

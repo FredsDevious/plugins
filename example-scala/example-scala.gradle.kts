@@ -1,6 +1,6 @@
 version = "0.0.1"
 
-project.extra["PluginName"] = "Scala Example Plugin"
+project.extra["PluginName"] = "Scala Example"
 project.extra["PluginDescription"] = ""
 
 plugins{

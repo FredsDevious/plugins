@@ -1,4 +1,5 @@
 import ProjectVersions.unethicaliteVersion
+import com.github.jengelman.gradle.plugins.shadow.tasks.ShadowJar
 
 buildscript {
     repositories {
@@ -10,9 +11,6 @@ buildscript {
 plugins {
     `java-library`
     checkstyle
-    // 'com.github.johnrengelman.shadow' version '7.1.2'
-//    kotlin("jvm") version "1.6.21"
-//    kotlin("kapt") version "1.6.21"
     id("com.github.johnrengelman.shadow") version "7.1.2"
 }
 
@@ -32,7 +30,6 @@ allprojects {
     apply<JavaPlugin>()
     apply(plugin = "java-library")
     apply(plugin = "com.github.johnrengelman.shadow")
-//    apply(plugin = "kotlin")
 
     repositories {
         mavenCentral()
